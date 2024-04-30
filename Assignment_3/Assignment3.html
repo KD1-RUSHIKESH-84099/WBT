@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .container {
+            max-width: 600px; /* Adjust the maximum width as per your preference */
+            margin: auto; /* Center the container horizontally */
+            padding: 20px; /* Add some padding to the container */
+            border: 1px solid #ccc; /* Add a border for visual separation */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            display: flex; /* Use flexbox to make the image and form side by side */
+            align-items: center; /* Center items vertically */
+        }
+
+        .image {
+            flex: 1; /* Let the image take up 50% of the container width */
+            padding: 10px; /* Add some padding to the image */
+        }
+
+        .form {
+            flex: 1; /* Let the form take up 50% of the container width */
+            padding: 10px; /* Add some padding to the form */
+        }
+    </style>
+</head>
+<body>
+    <center> <h1 style="color: yellowgreen;"><u>Registration Form</u></h1></center> 
+    <div class="container">
+        <div class="image">
+          <img src="logo2.png" alt="Your Image" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="form">
+          <form>
+            <p>Name: <input id="NAME" type="text" name="myname" required="" placeholder="Enter Your Name"></p>
+            <p>DOB: <input id="DOB" type="date" name="m"></p>
+            <p>Gmail: <input id="Gmail" type="text" name="myMail" required placeholder="Enter Your Gmail"></p>
+            <p>Password: <input id="Password" type="text" name="myPassword" required placeholder="Enter Password"></p>
+            <p>Address:  
+              <select name="mycountry">
+                <option value="1">India</option>
+                <option value="2">USA</option>
+                <option value="3">UK</option>
+              </select>
+              <select name="mystate">
+                <option value="1">Maharashtra</option>
+                <option value="2">Delhi</option>
+                <option value="3">Hyderabad</option>
+              </select>
+              <select name="mycity">
+                <option value="1">Nashik</option>
+                <option value="2">Noida</option>
+                <option value="3">Mysore</option>
+              </select>
+            </p>
+            <p style="margin-left: 60px; margin-top: -15px; margin-bottom: -15px;">Country</p>
+            <p style="margin-left: 160px; margin-top: -10px; margin-bottom: -15px;">State</p>
+            <p style="margin-left: 240px; margin-top: -15px; margin-bottom: -30px;">City</p>
+            <br>
+            <p>Gender:
+              <input type="radio" name="gender" value="1" /> Female
+              <input type="radio" name="gender" value="2" /> Male
+            </p>
+            <p>Upload Photo: 
+              <input type="file" name="photo" accept="image/*" placeholder="Browse Your Photo">
+            </p>
+            <p>Select Your Course: 
+              <select name="course">
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+                <option value="course3">Course 3</option>
+              </select>
+            </p>
+            <p>
+              <button type="submit">Register</button>
+              <button type="reset">Clear</button>
+            </p>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
