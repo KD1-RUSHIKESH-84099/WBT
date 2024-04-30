@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="calculator">
+        <u><h1>Calculator</h1></u>
+        <br>
+        <br>
+        <p>First Number:<input type="text" id="firstNumber" placeholder="Enter First Number"></p>
+        <br>
+        <p>Second Number:<input type="text" id="secondNumber" placeholder="Enter Second Number"></p>
+        <br>
+        <p>Result:<input type="text" id="result" readonly ></p>
+        <p><button type="button" onclick="Addition()">Addition</button></p>
+        <p><button type="button" onclick="Subtraction()">Subtraction</button></p>
+        <p><button type="button" onclick="Multiplication()">Multiplication</button></p>
+        <p><button type="button" onclick="Division()">Division</button></p>
+
+    </div>
+<script>
+    function Addition() {
+            
+        var x = parseInt(document.getElementById("firstNumber").value);
+        var y = parseInt(document.getElementById("secondNumber").value);
+    
+       
+        var result = x + y;
+    
+        
+        document.getElementById("result").value = result;
+    }
+    function Subtraction() {
+            
+            var x = parseInt(document.getElementById("firstNumber").value);
+            var y = parseInt(document.getElementById("secondNumber").value);
+        
+           
+            var result = x - y;
+        
+            
+            document.getElementById("result").value = result;
+        }
+        function Multiplication() {
+            
+            var x = parseInt(document.getElementById("firstNumber").value);
+            var y = parseInt(document.getElementById("secondNumber").value);
+        
+           
+            var result = x * y;
+        
+            
+            document.getElementById("result").value = result;
+        }
+        function Division() {
+            
+            var x = parseInt(document.getElementById("firstNumber").value);
+            var y = parseInt(document.getElementById("secondNumber").value);
+        
+           
+            var result = x / y;
+        
+            
+            document.getElementById("result").value = result;
+        }
+</script>
+    
+
+    
+
+  
+</body>
+</html>
