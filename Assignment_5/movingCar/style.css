@@ -1,0 +1,43 @@
+#myBody
+{
+    margin: 0px;
+}
+
+#myImage
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+#road
+{
+    position: absolute;
+    top: 89px;
+    background-color: #000;
+    height: 40px;
+    width: 800px;
+}
+
+#buttons-body
+{
+    position: absolute;
+    margin-top: 30vh;
+}
+
+.btn
+{
+    height: 80px;
+    width: 120px;
+    font-size: 24px;
+    border: none;
+    background-color: cornflowerblue;
+    box-shadow: 2px 2px;
+    border-radius: 4px;
+}
+
+.btn:hover
+{
+    background-color: green;
+    box-shadow: 2px 2px 4px;
+}
